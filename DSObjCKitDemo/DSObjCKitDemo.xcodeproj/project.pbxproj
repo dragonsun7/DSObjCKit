@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DF87BF3C3BED0D4F14C4B7B /* libPods-DSObjCKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A07B33474314FCA4C31B4884 /* libPods-DSObjCKitDemo.a */; };
+		4150AC061FF9224F003C56F3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4150AC051FF9224F003C56F3 /* Podfile */; };
 		41A078BD1FF920C50020D53C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A078BC1FF920C50020D53C /* AppDelegate.m */; };
 		41A078C51FF920C50020D53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A078C41FF920C50020D53C /* Assets.xcassets */; };
 		41A078C81FF920C50020D53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A078C61FF920C50020D53C /* LaunchScreen.storyboard */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4150AC051FF9224F003C56F3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41A078B81FF920C50020D53C /* DSObjCKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSObjCKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A078BB1FF920C50020D53C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41A078BC1FF920C50020D53C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -21,6 +24,9 @@
 		41A078C71FF920C50020D53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41A078C91FF920C50020D53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41A078CA1FF920C50020D53C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55037DC5AF462DC3A4B9B2E2 /* Pods-DSObjCKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSObjCKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSObjCKitDemo/Pods-DSObjCKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A07B33474314FCA4C31B4884 /* libPods-DSObjCKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DSObjCKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2237B198F1606C5FD83564 /* Pods-DSObjCKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSObjCKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSObjCKitDemo/Pods-DSObjCKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +34,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF87BF3C3BED0D4F14C4B7B /* libPods-DSObjCKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AF379F367C2F0D263100938 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA2237B198F1606C5FD83564 /* Pods-DSObjCKitDemo.debug.xcconfig */,
+				55037DC5AF462DC3A4B9B2E2 /* Pods-DSObjCKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		41A078AF1FF920C50020D53C = {
 			isa = PBXGroup;
 			children = (
+				4150AC051FF9224F003C56F3 /* Podfile */,
 				41A078BA1FF920C50020D53C /* DSObjCKitDemo */,
 				41A078B91FF920C50020D53C /* Products */,
+				1AF379F367C2F0D263100938 /* Pods */,
+				5139ACCCC34E044A414CB6EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +82,14 @@
 			path = DSObjCKitDemo;
 			sourceTree = "<group>";
 		};
+		5139ACCCC34E044A414CB6EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A07B33474314FCA4C31B4884 /* libPods-DSObjCKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41A078CE1FF920C50020D53C /* Build configuration list for PBXNativeTarget "DSObjCKitDemo" */;
 			buildPhases = (
+				9A1DAD1D13E661855E386574 /* [CP] Check Pods Manifest.lock */,
 				41A078B41FF920C50020D53C /* Sources */,
 				41A078B51FF920C50020D53C /* Frameworks */,
 				41A078B61FF920C50020D53C /* Resources */,
+				8491AA6D4A69B45EA6B2FA44 /* [CP] Embed Pods Frameworks */,
+				6ECC02E3CC516CCDB67FD718 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -121,12 +151,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4150AC061FF9224F003C56F3 /* Podfile in Resources */,
 				41A078C81FF920C50020D53C /* LaunchScreen.storyboard in Resources */,
 				41A078C51FF920C50020D53C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6ECC02E3CC516CCDB67FD718 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DSObjCKitDemo/Pods-DSObjCKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8491AA6D4A69B45EA6B2FA44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DSObjCKitDemo/Pods-DSObjCKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1DAD1D13E661855E386574 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DSObjCKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41A078B41FF920C50020D53C /* Sources */ = {
@@ -258,29 +340,33 @@
 		};
 		41A078CF1FF920C50020D53C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2237B198F1606C5FD83564 /* Pods-DSObjCKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AU5WNK462D;
 				INFOPLIST_FILE = DSObjCKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dragonsoft.DSObjCKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		41A078D01FF920C50020D53C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55037DC5AF462DC3A4B9B2E2 /* Pods-DSObjCKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AU5WNK462D;
 				INFOPLIST_FILE = DSObjCKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dragonsoft.DSObjCKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,7 @@
+platform :ios, '10.0'
+inhibit_all_warnings!   # 忽略所有pod中的警告
+
+target "DSObjCKitDemo" do
+    pod 'YTKNetwork'                            # 网络访问抽象
+    pod 'FLEX', :configurations => ['Debug']    # 在应用内调试与浏览对象
+end
