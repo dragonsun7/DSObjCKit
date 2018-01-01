@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3DF87BF3C3BED0D4F14C4B7B /* libPods-DSObjCKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A07B33474314FCA4C31B4884 /* libPods-DSObjCKitDemo.a */; };
 		4150AC061FF9224F003C56F3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 4150AC051FF9224F003C56F3 /* Podfile */; };
+		4150AC0A1FF92FDC003C56F3 /* TickerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4150AC091FF92FDC003C56F3 /* TickerRequest.m */; };
 		41A078BD1FF920C50020D53C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A078BC1FF920C50020D53C /* AppDelegate.m */; };
 		41A078C51FF920C50020D53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A078C41FF920C50020D53C /* Assets.xcassets */; };
 		41A078C81FF920C50020D53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A078C61FF920C50020D53C /* LaunchScreen.storyboard */; };
@@ -17,6 +18,11 @@
 
 /* Begin PBXFileReference section */
 		4150AC051FF9224F003C56F3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4150AC081FF92FDC003C56F3 /* TickerRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TickerRequest.h; sourceTree = "<group>"; };
+		4150AC091FF92FDC003C56F3 /* TickerRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TickerRequest.m; sourceTree = "<group>"; };
+		4150AC0B1FF93394003C56F3 /* Requests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Requests.h; sourceTree = "<group>"; };
+		4150AC0C1FFA29C5003C56F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4150AC0D1FFA650A003C56F3 /* SOURCE_FIX.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SOURCE_FIX.md; sourceTree = "<group>"; };
 		41A078B81FF920C50020D53C /* DSObjCKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSObjCKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A078BB1FF920C50020D53C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41A078BC1FF920C50020D53C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,10 +56,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4150AC071FF92FA4003C56F3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4150AC0B1FF93394003C56F3 /* Requests.h */,
+				4150AC081FF92FDC003C56F3 /* TickerRequest.h */,
+				4150AC091FF92FDC003C56F3 /* TickerRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		41A078AF1FF920C50020D53C = {
 			isa = PBXGroup;
 			children = (
 				4150AC051FF9224F003C56F3 /* Podfile */,
+				4150AC0C1FFA29C5003C56F3 /* README.md */,
+				4150AC0D1FFA650A003C56F3 /* SOURCE_FIX.md */,
 				41A078BA1FF920C50020D53C /* DSObjCKitDemo */,
 				41A078B91FF920C50020D53C /* Products */,
 				1AF379F367C2F0D263100938 /* Pods */,
@@ -72,6 +90,7 @@
 		41A078BA1FF920C50020D53C /* DSObjCKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4150AC071FF92FA4003C56F3 /* Request */,
 				41A078BB1FF920C50020D53C /* AppDelegate.h */,
 				41A078BC1FF920C50020D53C /* AppDelegate.m */,
 				41A078C41FF920C50020D53C /* Assets.xcassets */,
@@ -217,6 +236,7 @@
 			files = (
 				41A078CB1FF920C50020D53C /* main.m in Sources */,
 				41A078BD1FF920C50020D53C /* AppDelegate.m in Sources */,
+				4150AC0A1FF92FDC003C56F3 /* TickerRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
