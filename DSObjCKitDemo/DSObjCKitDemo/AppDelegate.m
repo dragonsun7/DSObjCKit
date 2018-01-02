@@ -26,8 +26,7 @@
     networkConfig.baseUrl = @"https://www.okex.com/api/v1/";
     
     // 获取OKEx最新币币行情数据
-    NSString *symbol = @"ltc_btc";
-    TickerRequest *request = [[TickerRequest alloc] initWithSymbol:symbol];
+    TickerRequest *request = [[TickerRequest alloc] initWithSymbol:@"snt_usdt"];
     [request startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
         id json = request.responseJSONObject;
         NSLog(@"%@, %@", [json class], json);
